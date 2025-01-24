@@ -1,16 +1,24 @@
-# testing_app
+# Wallpaper App
 
-A new Flutter project.
+A Flutter-based wallpaper app that fetches high-quality wallpapers from an online API and displays them in a Pinterest-style grid layout. The app supports lazy loading and infinite scrolling, allowing users to browse a variety of beautiful wallpapers.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+Pinterest-style grid layout: Dynamic grid with varying image sizes.
 
-A few resources to get you started if this is your first Flutter project:
+Infinite scrolling: New wallpapers are loaded as you scroll.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Lazy loading: Efficient image loading as you scroll through the app.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clean UI: A modern, minimalistic design with smooth transitions.
+
+## Technologies Used
+Flutter: Framework used to build the app.
+Provider: State management solution used to manage the app state.
+flutter_staggered_grid_view: Package used to create a staggered grid layout.
+http: For handling image downloads from the API.
+Pexels API: The API used to fetch wallpaper images.
+
+## You can download the application from my Google Drive 
+link: https://drive.google.com/file/d/18ruWMVaPwclajcoEQucwTmTdb4ItsjAg/view?usp=drive_link
+
