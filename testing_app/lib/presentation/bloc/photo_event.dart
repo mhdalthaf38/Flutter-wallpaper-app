@@ -1,8 +1,11 @@
 import 'package:equatable/equatable.dart';
 
-abstract class PhotoEvent extends Equatable {
-  @override
-  List<Object> get props => [];
+abstract class PhotoEvent {
 }
 
 class FetchPhotos extends PhotoEvent {}
+class downloadImage extends PhotoEvent {
+  final dynamic photo;
+  final dynamic context;
+  downloadImage(this.photo, this.context);
+}

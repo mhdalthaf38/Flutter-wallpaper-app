@@ -15,8 +15,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => PhotoBloc(PexelsApiService())..add(FetchPhotos()),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<PhotoBloc>(
+          create: (context) => PhotoBloc(),
+        ),
+      ],
+     
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Wallpaper App',
